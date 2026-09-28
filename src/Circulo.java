@@ -25,6 +25,8 @@
 
 public class Circulo extends FormaGeometrica{
     private double raio;
+    private static final double PI = 3.14;
+    private double pierre = (raio * PI);
     
     /**
      * Construtor. O raio mínimo do círculo é 1.
@@ -43,8 +45,8 @@ public class Circulo extends FormaGeometrica{
      * @return Área do círculo (double)
      */
     @Override
-    public double area(){
-        //TODO
+    public double area(){    
+        return pierre*pierre;
     }
 
     /**
@@ -53,7 +55,7 @@ public class Circulo extends FormaGeometrica{
      */
     @Override
     public double perimetro(){
-        //TODO
+        return 2*pierre;
     }
 
     /**
